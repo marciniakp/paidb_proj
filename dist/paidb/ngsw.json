@@ -1,0 +1,54 @@
+{
+  "configVersion": 1,
+  "index": "https://marciniakp.github.io/paidb/./index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [],
+      "patterns": [
+        "https:\\/\\/fonts\\.googleapis\\.com\\/.*"
+      ]
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "clock-api",
+      "patterns": [
+        "https:\\/\\/mysterious-sierra-92484\\.herokuapp\\.com\\/time"
+      ],
+      "strategy": "freshness",
+      "maxSize": 2000,
+      "maxAge": 86400000,
+      "timeoutMs": 5000,
+      "version": 1
+    }
+  ],
+  "hashTable": {},
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}

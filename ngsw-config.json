@@ -1,0 +1,39 @@
+{
+  "index": "./index.html",
+  "assetGroups": [{
+    "name": "app",
+    "installMode": "prefetch",
+    "resources": {
+      "files": [
+        "./favicon.ico",
+        "./index.html",
+        "./*.css",
+        "./*.js"
+      ],
+      "urls": [
+        "https://fonts.googleapis.com/**"
+      ]
+    }
+  }, {
+    "name": "assets",
+    "installMode": "lazy",
+    "updateMode": "prefetch",
+    "resources": {
+      "files": [
+        "./assets/**"
+      ]
+    }
+  }],
+  "dataGroups": [
+    {
+      "name": "clock-api",
+      "urls": ["https://mysterious-sierra-92484.herokuapp.com/time"],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 2000,
+        "maxAge": "1d",
+        "timeout": "5s"
+      }
+    }
+  ]
+}

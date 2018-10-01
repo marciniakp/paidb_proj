@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+body, html {
+  height: 90%;
+}
+body {
+  background: cadetblue;
+  color: blanchedalmond;
+  font-family: 'Montserrat';
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
